@@ -1,4 +1,4 @@
-# pdf-reader-with-pdf.js
+# pdf-reader-with-pdfjs
 
 A PDF web reader with css and html.<p>
 The project was made with PDF.js by mozilla<p>
