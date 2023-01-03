@@ -5,7 +5,7 @@
 		var globalNumeroPaginas = 0;
 		var globalZoom = 100;
         var pesquisa = "";
-		var pdf = '../files/hyu/'+document.getElementById('gtkja').value;
+		var pdf = './pdf/test.pdf';
 		var widthViewPortIniti = 1.5;
 		var widthViewPort = 1.5;
 		var resolution = 1;
@@ -434,7 +434,7 @@
 		function imprimir(pdf){
 		 
 			desabilitarBotoes();
-			printPdf('../files/hyu/'+pdf+'print.pdf');
+			printPdf('./pdf/test.pdf');
 		    setTimeout(habilitarBotoes, 6000);
 		}
 		printPdf = function (url) {
