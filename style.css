@@ -109,8 +109,8 @@ button:disabled img{
 	width: 100%;
   	flex-wrap: nowrap;
     white-space: nowrap;
-
-	
+  
+	justify-content: center;
 	background-color:  #fbf3db;
 
 	
@@ -177,14 +177,25 @@ img{
 }
 #my_canvas{
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.47);
-	margin: 10vh auto;
+    overflow: hidden;
 	flex:none;
 
 	
 }
+
+#pageOne{
+    position: relative;
+    overflow: visible;
+    margin: 10px 0;
+}
+#pageTwo{
+    position: relative;
+    overflow: visible;
+    margin: 10px 0;
+}
 #my_canvas2{
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.47);
-	margin: 10vh 0;
+    overflow: hidden;
 	flex:none;
 	display: none;
 	
@@ -234,6 +245,11 @@ img{
 }
 .btn{
 	overflow: visible;
+	border-radius: 2px;
+	padding: 0 5px;
+	display: flex;
+     align-items: center;
+     justify-content: center;
 }
 .tools{
 	display: flex;
@@ -244,4 +260,64 @@ img{
 .Flipped, .Flipped .itemMenu{
     transform: rotateX(180deg);
  }
+ 
+ #find{
+     padding: 0;
+    height: 28px;
+    border: 1px solid  var(--primaryColor);
+	outline: none;
+	padding: 0 5px;
+ }
+ .findBar{
+     display: flex;
+     align-items: center;
+     border-radius: 3px;
+ }
+
+ #loader{
+     width: 50px;
+    display: flex;
+    align-items: center;
+     position: relative;
+ }
+ #loader img{
+     width: 100%;
+     position: absolute;
+     
+ }
+
+ .indice{
+      width: 50px;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ 
+ .btnFind:disabled{
+     border: none;
+ }
+ .btnFind{
+     background-color: var(--primaryColor);
+     border: none;
+     height: 30px;
+     border-radius: 0;
+ }
+ .btnFind:hover{
+     background-color: var(--secondaryColor);
+    
+ }
+ .btnFind img{
+     filter: invert(100%);
+ }
+ 
+ .btnNavFind{
+     border: none;
+     
+ }
+ .btnNavFind:disabled{
+     border: none;
+ }
+ 
+ 
+ 
  
